@@ -2,7 +2,7 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  const totalSeconds = 5;
+  const totalSeconds = 20;
   let secondLeft = totalSeconds;
   $: process = ((totalSeconds - secondLeft) / totalSeconds) * 100;
   let isRunning = false;
